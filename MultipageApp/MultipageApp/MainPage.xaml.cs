@@ -22,12 +22,9 @@ namespace MultipageApp
                 new Maakond {Nimetus="Tartumaa",Pealinn="Tartu", Inimeste_arv=30000},
                 new Maakond {Nimetus="Ida-Virumaa",Pealinn="Kohtla-Järve", Inimeste_arv=10000},
             };
-            //blalblala
+            
             list.BindingContext = Maakonnads;
 
-            list.BindingContext = Maakonnads;
-            list.BindingContext = Maakonnads;
-            list.BindingContext = Maakonnads;
         }
         private async void Button_Clicked(object sender, EventArgs e)
         {

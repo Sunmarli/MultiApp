@@ -1,7 +1,7 @@
-﻿ ﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Andmete_edastamine_navigeerimise.Maakonnad">
+             x:Class="MultipageApp.Maakonnad">
     <ContentPage.Content>
         <StackLayout>
             <Entry x:Name="nimetusEntry" Text="{Binding Path=Nimetus}"/>
@@ -15,9 +15,9 @@
 
             </StackLayout>
             <Button Text="Salvesta" Clicked="Button_Clicked"/>
-            <Button Text="Salvesta failisse" Clicked="Salvesta_failisse"/>
-            <Button Text="Loe failist" Clicked="Loe_failist"/>
-            <Button Text="Kustuta faili" Clicked="Kustuta_faili"/>
+     
+            
+          
             <Label x:Name="lbl"/>
         </StackLayout>
     </ContentPage.Content>

@@ -17,7 +17,7 @@ namespace MultipageApp
         public Maakond Maakond { get; set; }
         public Maakonnad(Maakond maakond)
         {
-            //InitializeComponent();
+            InitializeComponent();
 
             Maakond = maakond;
             if (maakond == null)
