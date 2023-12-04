@@ -17,11 +17,13 @@
                                     <ColumnDefinition Width="*"/>
                                     <ColumnDefinition Width="*"/>
                                     <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
                                 </Grid.ColumnDefinitions>
                                 <Label Text="{Binding Nimetus}" FontSize="Medium" Grid.Column="0"/>
                                 <Label Text="{Binding Pealinn}" FontSize="Medium" Grid.Column="1"/>
                                 <Label Text="{Binding Inimeste_arv}" FontSize="Medium" Grid.Column="2"/>
                                 <Label Text="{Binding Pindala}" FontSize="Medium" Grid.Column="3"/>
+                                <Label Text="{Binding Asukoht}" FontSize="Medium" Grid.Column="4"/>
                             </Grid>
                         </ViewCell.View>
                     </ViewCell>

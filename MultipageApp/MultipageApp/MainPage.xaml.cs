@@ -18,8 +18,8 @@ namespace MultipageApp
             InitializeComponent();
             Maakonnads = new ObservableCollection<Maakond>
             {
-                new Maakond {Nimetus="Harjumaa",Pealinn="Tallinn", Inimeste_arv=52000},
-                new Maakond {Nimetus="Tartumaa",Pealinn="Tartu", Inimeste_arv=30000},
+                new Maakond {Nimetus="Harjumaa",Pealinn="Tallinn", Inimeste_arv=52000, Pindala=4327,Asukoht="North"},
+                new Maakond {Nimetus="Tartumaa",Pealinn="Tartu", Inimeste_arv=30000, Pindala=3349 ,Asukoht="South"},
                 new Maakond {Nimetus="Ida-Virumaa",Pealinn="Kohtla-Järve", Inimeste_arv=10000},
             };
             
