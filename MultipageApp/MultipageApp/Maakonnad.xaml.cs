@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+using System.IO;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -13,6 +10,8 @@ namespace MultipageApp
     public partial class Maakonnad : ContentPage
     {
 
+        string filename;
+        string folderPath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
         bool edited = true;
         public Maakond Maakond { get; set; }
         public Maakonnad(Maakond maakond)
@@ -42,6 +41,34 @@ namespace MultipageApp
                     homePage.AddMaakond(Maakond);
                 }
             }
+        }
+        async void Salvesta_failisse(object sender, EventArgs e)
+        {
+            filename = "Maakonnad.txt";
+            if (String.IsNullOrEmpty(filename)) return;
+            if (File.Exists(Path.Combine(folderPath, filename)))
+            {
+                bool isRewrited = await DisplayAlert("Kinnitus", "Fail on juba olemas, lisame andmeid sinna?", "Jah", "Ei");
+                if (isRewrited == false) return;
+            }
+            string text = nimetusEntry.Text + ' ' + pealinnEntry.Text + ' ' + arv_stepper.Value.ToString();
+            File.AppendAllLines(Path.Combine(folderPath, filename), text.Split('\n'));
+        }
+        async void Loe_failist(object sender, EventArgs e)
+        {
+            filename = "Maakonnad.txt";
+            if (String.IsNullOrEmpty(filename)) return;
+            if (filename != null)
+            {
+                lbl.Text = File.ReadAllText(Path.Combine(folderPath, filename));
+            }
+        }
+
+
+
+        async void Kustuta_faili(object sender, EventArgs e)
+        {
+            File.Delete(Path.Combine(folderPath, filename));
         }
 
     }
