@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultipageApp.Android", "MultipageApp\MultipageApp.Android\MultipageApp.Android.csproj", "{AC23EBB3-AD94-4756-83AB-730D23D28297}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultipageApp", "MultipageApp\MultipageApp\MultipageApp.csproj", "{3C036000-EDDE-4117-A7E5-D6BA21E8B34B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC23EBB3-AD94-4756-83AB-730D23D28297}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC23EBB3-AD94-4756-83AB-730D23D28297}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC23EBB3-AD94-4756-83AB-730D23D28297}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{AC23EBB3-AD94-4756-83AB-730D23D28297}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC23EBB3-AD94-4756-83AB-730D23D28297}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC23EBB3-AD94-4756-83AB-730D23D28297}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{3C036000-EDDE-4117-A7E5-D6BA21E8B34B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C036000-EDDE-4117-A7E5-D6BA21E8B34B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C036000-EDDE-4117-A7E5-D6BA21E8B34B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3C036000-EDDE-4117-A7E5-D6BA21E8B34B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C036000-EDDE-4117-A7E5-D6BA21E8B34B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C036000-EDDE-4117-A7E5-D6BA21E8B34B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0401A5B6-A175-44DE-B0EB-634C5360370C}
+	EndGlobalSection
+EndGlobal
